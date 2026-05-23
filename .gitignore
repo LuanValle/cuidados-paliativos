@@ -1,0 +1,15 @@
+.vercel
+documentos/
+index-spa-backup.html
+teste.html
+css/style.css
+js/navigation.js
+imagens/script.js
+imagens/*.pdf
+imagens/*.png
+local-server.mjs
+*.psd
+*.ai
+*.zip
+*.exe
+*.img
