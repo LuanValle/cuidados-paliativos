@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 <body>
     <a href="/pages/info.html#informacao" class="info-btn" aria-label="Informações">i</a>
     <div class="screen">
-        <button class="back-btn" onclick="window.history.back()">? Voltar</button>
+        <button class="back-btn" onclick="window.history.back()">← Voltar</button>
         <h1>Medidas de Conforto</h1>
         <div class="image-button-row">
             <a href="massagem_toque_afetivo.html" class="btn btn-image btn-image-auto">
@@ -54,5 +54,37 @@
             </table>
         </div>
     </div>
+
+    <style>
+        .image-button-row {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            width: min(100%, 980px);
+        }
+
+        .image-button-row .btn-image-auto {
+            max-width: none;
+            width: 100%;
+            height: 300px;
+        }
+
+        .image-button-row .btn-image-auto img {
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            .image-button-row {
+                grid-template-columns: 1fr;
+            }
+
+            .image-button-row .btn-image-auto {
+                height: 260px;
+            }
+        }
+    </style>
 </body>
 </html>
